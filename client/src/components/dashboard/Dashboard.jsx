@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
-import logo from "../../assets/LOGO -MOCKVERSE.png";
+import logo from "../../assets/logo.png";
 import MidSection from "./MidSection";
 
 const Dashboard = () => {
