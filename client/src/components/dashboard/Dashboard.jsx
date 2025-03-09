@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
-import logo from "../assets/LOGO -MOCKVERSE.png";
+import logo from "../../assets/LOGO -MOCKVERSE.png";
 
 const Dashboard = () => {
     return (
@@ -24,10 +24,9 @@ const Toggle = () => {
     };
 
     return (
-        <div className="theme bg-gray-400 rounded-full w-18 h-9 sm:w-24 sm:h-12 flex items-center p-1 relative cursor-pointer" onClick={toggleTheme}>
+        <div className="theme bg-gray-400 rounded-full w-19 h-9 sm:w-22 sm:h-12 flex items-center p-1 relative cursor-pointer" onClick={toggleTheme}>
             <div
-                className={`w-7 h-7 sm:w-10 sm:h-10 bg-amber-300 rounded-full flex justify-center items-center transition-all duration-300 transform ${darkMode ? "translate-x-9 sm:translate-x-[2.5rem]" : "translate-x-0"}`}
-            >
+                className={`w-7 h-7 sm:w-10 sm:h-10 bg-amber-300 rounded-full flex justify-center items-center transition-all duration-300 transform ${darkMode ? "translate-x-10 sm:translate-x-[2.5rem]" : "translate-x-0"}`}>
                 <FontAwesomeIcon className="text-lg sm:text-2xl" icon={darkMode ? faMoon : faSun} />
             </div>
         </div>
@@ -37,7 +36,7 @@ const Toggle = () => {
 
 const MidSection = () => {
     return (<>
-        
+
     </>);
 }
 export default Dashboard;
