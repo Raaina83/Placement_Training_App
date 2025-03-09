@@ -2,14 +2,16 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 import logo from "../../assets/LOGO -MOCKVERSE.png";
+import MidSection from "./MidSection";
 
 const Dashboard = () => {
     return (
-        <div className="w-full min-h-screen sm:min-h-[90vh] transition-colors duration-500" id="dashboard">
+        <div className="w-full h-full sm:min-h-[100vh] transition-colors duration-500" id="dashboard">
             <section className="header bg-gray-500 w-full min-h-[5rem] sm:min-h-[7.5rem] flex flex-row items-center justify-between p-3 sm:p-4">
                 <img src={logo} className="w-28 sm:w-48" alt="mockverse-logo" />
                 <Toggle />
             </section>
+            <MidSection />
         </div>
     );
 };
@@ -20,7 +22,7 @@ const Toggle = () => {
     const toggleTheme = () => {
         setDarkMode(!darkMode);
         document.getElementById("dashboard").classList.toggle("bg-gray-900");
-        document.getElementById("dashboard").classList.toggle("bg-purple-300");
+        document.getElementById("dashboard").classList.toggle("bg-black");
     };
 
     return (
@@ -33,10 +35,4 @@ const Toggle = () => {
     );
 };
 
-
-const MidSection = () => {
-    return (<>
-
-    </>);
-}
 export default Dashboard;
