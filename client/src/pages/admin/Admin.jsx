@@ -1,5 +1,4 @@
 import React from 'react'
-import Header from '../../components/dashboard/layouts/Header';
 import FilterTags from './FilterTags';
 import StudentData from './StudentData';
 const Admin = () => {

@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import Admin from './pages/admin/Admin';
 import { useState } from 'react';
-import Header from './components/dashboard/layouts/Header';
+import Header from './components/layouts/Header';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -12,7 +12,7 @@ function App() {
   return (
     <div className={darkMode ? "dark" : "false"}>
       <Header toggle={setDarkMode} mode={darkMode}/>
-      {/* <Admin/> */}
+      <Admin/>
     </div>
   )
 }
