@@ -6,12 +6,13 @@ import profilepic from "../../assets/profile.png";
 const MidSection = () => {
     return (
         <>
-            <ProfileImg />
+            <UserInfo />
+            <Buttons />
         </>
     );
 }
 
-const ProfileImg = () => {
+const UserInfo = () => {
     const img = profilepic;
     const name = "Amandeep Singh";
     const email = "xyzxyzxyz@xyz.com";
@@ -53,6 +54,13 @@ const ProfileImg = () => {
                 </div>
             </div>
 
+            
+        </>
+    );
+}
+
+const Buttons = () => {
+    return(<>
             <div className="btns grid grid-cols-2 gap-4 mt-10 mx-4 sm:mx-0 md:mx-20">
             <button className="bg-gray-800 text-sm sm:text-base text-white cursor-pointer py-2 px-4 rounded-lg shadow-lg flex items-center justify-center gap-2 hover:bg-gray-900">
                 Download Resume <FontAwesomeIcon icon={faDownload} />
@@ -67,8 +75,7 @@ const ProfileImg = () => {
                 Start Mock Test <FontAwesomeIcon icon={faPlay} />
             </button>
         </div>
-        </>
-    );
+    </>)    
 }
 
 export default MidSection;
