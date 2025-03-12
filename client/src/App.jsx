@@ -5,6 +5,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import Admin from './pages/admin/Admin';
 import { useState } from 'react';
 import Header from './components/layouts/Header';
+import TestUpload from './components/testUpload/TestUpload';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
