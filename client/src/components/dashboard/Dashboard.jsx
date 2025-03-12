@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 import logo from "../../assets/logo.png";
 import MidSection from "./MidSection";
+import Graphs from "./Graphs";
+
 
 const Dashboard = () => {
     return (
@@ -12,6 +14,7 @@ const Dashboard = () => {
                 <Toggle />
             </section>
             <MidSection />
+            <Graphs/>
         </div>
     );
 };
