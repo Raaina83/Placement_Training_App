@@ -14,6 +14,7 @@ function App() {
     <div className={darkMode ? "dark" : "false"}>
       <Header toggle={setDarkMode} mode={darkMode}/>
       <Admin/>
+      <Dashboard/>
     </div>
   )
 }
